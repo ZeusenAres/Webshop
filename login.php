@@ -9,11 +9,19 @@
 </html>
 
 <?php
+session_start();
+
 if (isset($_POST['submit'])) {
 
     if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['email'])) {
 
+        foreach ($_POST as $key => $value) {
 
+            if ($key != 'submit') {
+
+                echo "$key: $value </br>";
+            }
+        }
     }
 }
 ?>
