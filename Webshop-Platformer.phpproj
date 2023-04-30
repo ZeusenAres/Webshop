@@ -1,0 +1,11 @@
+<Project Sdk="Devsense.Php.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>cafc1b50-25e1-48b8-94ce-baf95f18493a</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnvName>PHPDev</EnvName>
+    <RootNamespace>Webshop\Platformer</RootNamespace>
+    <WebRoot />
+    <RuntimeVersion>7.4</RuntimeVersion>
+  </PropertyGroup>
+</Project>
