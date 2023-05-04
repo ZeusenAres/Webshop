@@ -26,6 +26,11 @@ body {
     background-color: #2F3353;
 }
 
+.header form {
+    display: flex;
+    flex-direction: row;
+}
+
 .content {
     margin-top: 100px;
     max-width: 50%;

@@ -3,11 +3,12 @@ class RedcomAPI
 {
     private string $baseUrl = 'localhost:9085';
 
-    public function request(string $request, string $endpoint, string $body = '{}')
+    public function request(string $request, string $endpoint, string $body = '{}', array $post = [])
     {
-        if(!empty($body['password']))
+        if(!empty($post['password']))
         {
-            $body['password'] = password_hash($body['password'], PASSWORD_DEFAULT);
+            $post['password'] = password_hash($post['password'], PASSWORD_DEFAULT);
+            $body = json_encode($post, true);
         }
         $ch = curl_init();
         $headers = array(

@@ -6,7 +6,7 @@
     $db = new UserController();
     if($_SERVER['REQUEST_METHOD'] == 'POST')
     {
-        $db->insertUser($_POST['username'], $_POST['password'], $_POST['email']);
+        $db->insertUser(0, $_POST['username'], $_POST['password'], $_POST['email']);
         $db->insertUserToAPI($_POST['username'], $_POST['password'], $_POST['email']);
         header('Location:home.php');
     }

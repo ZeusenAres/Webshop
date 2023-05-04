@@ -15,6 +15,7 @@
                 $_SESSION['id'] = $user['id'];
                 $_SESSION['username'] = $user['username'];
                 $_SESSION['email'] = $user['email'];
+                $_SESSION['profile_image'] = $user['profile_image'];
                 header('Location:home.php');
             }
             catch(Exception $e)
