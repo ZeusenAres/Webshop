@@ -2,6 +2,9 @@
 <html>
     <head>
         <?php
+        ini_set('session.gc_maxlifetime', 60 * 60 * 24 * 7);
+        session_set_cookie_params(60 * 60 * 24 * 7);
+
         session_start();
         require_once('Classes/UserController.php');
         $db = new UserController();
@@ -35,7 +38,7 @@
             <form method="POST" action="login.php">
                 <h3>Log in</h3>
                 <input type="text" name="username" placeholder="Username" />
-                <input type="text" name="password" placeholder="Password" />
+                <input type="password" name="password" placeholder="Password" />
                 <input type="submit" name="submit" value="Log in" />
             </form>
         </div>

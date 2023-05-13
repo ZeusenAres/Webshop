@@ -1,0 +1,7 @@
+﻿.properties-form {
+    z-index: -1;
+}
+
+.show-properties:focus .properties-form {
+    z-index: 5;
+}

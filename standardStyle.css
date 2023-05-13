@@ -78,3 +78,36 @@ input[type="submit"] {
 .error-message {
     color: red;
 }
+
+.user-profile {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.user-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.user-profile:hover .user-menu {
+    display: block;
+}
+
+.product-container img {
+    max-height: 50px;
+    max-width: 100px;
+    width: auto;
+    height: auto;
+}
+
+.add-to-cart-form {
+    width: auto;
+    height: auto;
+    background: none;
+}
